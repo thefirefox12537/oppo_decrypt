@@ -2,10 +2,9 @@
 Oppo .ofp and Oneplus .ops Firmware decrypter
 ------------------------------------
 
-* ofp_qc_decrypt.py  : Decrypts oppo qc chipset based firmware with .ofp extension (oppo)
-* ofp_mtk_decrypt.py : Decrypts oppo mtk chipset based firmware with .ofp extension (oppo)
-* opscrypto.py       : Decrypts and re-encrypts based firmware with .ops extension (oneplus)
-* backdoor.py        : Enables hidden "readback" functionality
+* ofp_decrypt.py  : Decrypts oppo qc and mtk chipset based firmware with .ofp extension (oppo)
+* opscrypto.py    : Decrypts and re-encrypts based firmware with .ops extension (oneplus)
+* backdoor.py     : Enables hidden "readback" functionality
 
 
 Installation:
@@ -21,11 +20,11 @@ Both Linux and Windows now supported, folks !
 
 Usage:
 -------- 
-* Extract oppo ofp file:
+* Run UI and extract oppo ofp file:
 
+Click ```ofp_decrypt.py``` file, or
 ```
-python3 ofp_qc_decrypt.py [myops.ofp] [directory to extract]
-python3 ofp_mtk_decrypt.py [myops.ofp] [directory to extract]
+python3 ofp_decrypt.py
 ```
 
 * Extract oneplus ops file:

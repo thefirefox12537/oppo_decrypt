@@ -750,7 +750,7 @@ class ofpGui(QWidget):
             QProgressBar::chunk {
                 background-color: rgb(24, 24, 168);
             }
-        ''' if self.style().objectName() == "windowsvista" else ""
+        '''
         self.posdir = posdir
         self.setupUi()
         self.connectUi()
@@ -877,7 +877,7 @@ class ofpGui(QWidget):
         self.thread = QThreadPool()
         self.signal = ofpSignal()
         self.worker = ofpWorker(lambda: mtk(filename, outdir, self) \
-                                        if mtk().read_file(mtk, filename, target="scatter", format="name") else \
+                                        if mtk().read_file(filename, target="scatter", format="name") else \
                                         qcom(filename, outdir, self))
 
         self.signal.wroteLog.connect(self.setTextHtml)

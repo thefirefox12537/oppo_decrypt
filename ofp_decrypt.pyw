@@ -16,7 +16,7 @@ from binascii import unhexlify, hexlify
 from struct import unpack
 from time import sleep
 from zipfile import ZipFile
-from Crypto.Cipher import AES
+from Cryptodome.Cipher import AES
 from PyQt5.QtGui import QFont, QIcon, QColor, QDesktopServices, QTextCursor
 from PyQt5.QtCore import Qt, QCoreApplication, QUrl, QSize, QPoint, QRect, QSettings, QObject, QRunnable, QThreadPool, pyqtSignal as Signal, pyqtSlot as Slot
 from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QHBoxLayout, QGridLayout, QTableWidget, QTableWidgetItem, QCheckBox, QLabel, QLineEdit, QToolButton, QTextEdit, QPushButton, QProgressBar, QMessageBox, QFileDialog, QStyleFactory, QSizePolicy, QAbstractItemView
